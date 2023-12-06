@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&family=Oswald:wght@200&family=Rubik&display=swap");
+
+:root {
+  /* Fonts color */
+  --font-primary-color: white;
+  --body-color: rgb(242, 8, 8);
+  /*Fonts */
+  --textsFont: "Bebas Neue", sans-serif;
+  font-family: "Dhurjati", sans-serif;
+  font-family: "Rubik", sans-serif;
+  --titlesFont: "Bebas Neue", sans-serif;
+  font-family: "Dhurjati", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--font-primary-color);
+  border-bottom: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  position: fixed;
+  width: 100%;
+  font-family: var(--titlesFont);
+  font-size: 25px;
+}
+
+header > a > img {
+  width: 40px;
+  height: 40px;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+/* HEADER y NAVBAR */
+#nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+#nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+#nav1 > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  transition-duration: 0.3s;
+}
+
+#nav1 > li > a:hover {
+  letter-spacing: 0.1rem;
+  color: var(--body-color);
+  border-bottom: 1px solid var(--body-color);
+  /* border-bottom-width: 2px; */
+}
+
+#nav2 > li > a > img {
+  width: 30px;
+  height: 30px;
+  transition-duration: 0.3s;
+}
+
+#nav2 > li > a > img:hover {
+  width: 50px;
+  height: 50px;
+}
+/* HEADER y NAVBAR */
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* MAIN */
+
+/* FORM  */
+form {
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+label {
+  text-align: left;
+  margin-top: 10px;
+  font-family: var(--textsFont);
+  font-size: 25px;
+  width: 70%;
+}
+
+input {
+  border-radius: 5px;
+  /* height: 20px; */
+  width: 70%;
+  height: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+textarea {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 50%;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+#textarea-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: var(--textsFont);
+  font-size: 25px;
+}
+
+button {
+  margin-top: 5px;
+  height: 25px;
+  width: 50%;
+  background-color: grey;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--body-color);
+}
+
+/* FORM  */
