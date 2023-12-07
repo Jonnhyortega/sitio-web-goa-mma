@@ -4,7 +4,7 @@
 :root {
   /* Fonts color */
   --font-primary-color: white;
-  --body-color: rgb(242, 8, 8);
+  --body-color: rgb(0, 0, 0);
   /*Fonts */
   --textsFont: "Bebas Neue", sans-serif;
   font-family: "Dhurjati", sans-serif;
@@ -163,3 +163,96 @@ button:hover {
 }
 
 /* FORM  */
+
+/* Section PROFILE */
+#section-profile {
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background-color: red;
+}
+
+#section-profile img {
+  border-radius: 10px;
+  width: 500px;
+}
+
+#box-info-fighter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#name {
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#apodo {
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#box-text {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 10px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+#text-right {
+  text-align: center;
+}
+
+#text-left,
+#text-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--titlesFont);
+  font-size: 20px;
+  padding: 10px;
+}
+
+#text-left p {
+  border: 1px solid white;
+  /* border-radius: 15px; */
+  /* border-radius: 2px; */
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+}
+#text-right p {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: white;
+  text-align: center;
+}
+
+#tapology button {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: black;
+  transition-duration: 0.5s;
+  width: 200px;
+  text-decoration: none;
+  background-color: white;
+}
+#tapology button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Section PROFILE */
